@@ -1,18 +1,18 @@
 # Top-level configuration
-name = "my-worker"
+name = "amp02"
 main = "src/index.ts"
 compatibility_date = "2022-07-12"
 
 workers_dev = false
-route = { pattern = "example.org/*", zone_name = "example.org" }
+route = { pattern = "amp02.azizazudinmaharani.workers.dev/*", zone_name = "amp02.azizazudinmaharani.workers.dev" }
 
 kv_namespaces = [
   { binding = "<MY_NAMESPACE>", id = "<KV_ID>" }
 ]
 
 [env.staging]
-name = "my-worker-staging"
-route = { pattern = "staging.example.org/*", zone_name = "example.org" }
+name = "amp02"
+route = { pattern = "amp02.azizazudinmaharani.workers.dev/*", zone_name = "amp02.azizazudinmaharani.workers.dev" }
 
 kv_namespaces = [
   { binding = "<MY_NAMESPACE>", id = "<STAGING_KV_ID>" }
